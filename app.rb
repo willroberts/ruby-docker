@@ -1,1 +1,2 @@
-puts "hello world"
+puts "Hello from Docker"
+puts "Ruby version: #{RUBY_VERSION}"
