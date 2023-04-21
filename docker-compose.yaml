@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  myapp:
+    image: ruby:3
+    entrypoint: sh
+    command: start_app.sh
+    working_dir: /app
+    environment:
+      HELLO: world
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
